@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
 
+
+
 function App() {
+    const audio = new Audio('https://playerservices.streamtheworld.com/api/livestream-redirect/WRTI_JAZZ.mp3')
+
+  async  function   f()   {
+
+      await  audio.play()
+
+    }
+    const stop = () => {
+        audio.pause()
+    }
+
+
+
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <button onClick={f}>play</button>
+       <button onClick={stop}>stop</button>
     </div>
   );
 }
