@@ -19,9 +19,9 @@ function App() {
 
 
   return (
-    <div className="App">
-       <button onClick={f}>play</button>
-       <button onClick={stop}>stop</button>
+    <div className="App ">
+       <button className='btn btn-success waves-effect' onClick={f}><h1>PLAY</h1></button>
+       <button  className='btn btn-danger waves-effect'  onClick ={stop}><h1>STOP</h1></button>
     </div>
   );
 }
