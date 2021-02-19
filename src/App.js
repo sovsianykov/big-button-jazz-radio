@@ -20,8 +20,8 @@ function App() {
 
   return (
     <div className="App ">
-       <button className='btn btn-outline-primary waves-effect' onClick={f}><h1>PLAY</h1></button>
-       <button  className='btn btn-info waves-effect'  onClick ={stop}><h1>STOP</h1></button>
+       <button className='btn btn-info waves-effect'  onClick={f}><h1>PLAY</h1></button>
+       <button className='btn btn-outline-primary waves-effect'   onClick ={stop}><h1>STOP</h1></button>
     </div>
   );
 }
